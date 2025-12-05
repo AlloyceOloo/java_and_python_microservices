@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/mpesa}
+    username: ${SPRING_DATASOURCE_USERNAME:mpesa}
+    password: ${SPRING_DATASOURCE_PASSWORD:mpesa}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+
+kafka:
+  bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+
+fineract:
+  baseUrl: http://mock-fineract:8081
+  apiKey: demo-key
+
+server:
+  port: 8080
+
+logging:
+  level:
+    root: INFO
+    com.mpesa: DEBUG
