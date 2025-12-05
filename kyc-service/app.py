@@ -13,4 +13,4 @@ def kyc_status(client_id):
 	return jsonify({"clientId": client_id, "status": "PASS"})
 
 if __name__ == '__main__':
-app.run(host='0.0.0.0', port=5000)
+	app.run(host='0.0.0.0', port=5000)
