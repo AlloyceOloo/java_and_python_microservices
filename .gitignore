@@ -1,0 +1,42 @@
+# =====================================================
+# Java / Spring Boot (spring-boot directory)
+# =====================================================
+spring-boot/build/
+spring-boot/target/
+spring-boot/out/
+spring-boot/.gradle/
+spring-boot/.settings/
+spring-boot/.classpath
+spring-boot/.project
+
+# Lombok / IDE processors
+spring-boot/.factorypath
+
+# =====================================================
+# Python services
+# =====================================================
+event-stream/__pycache__/
+event-stream/*.pyc
+kafka-consumer/__pycache__/
+kafka-consumer/*.pyc
+
+# Virtual environments (if ever created)
+venv/
+.env
+*.env
+
+# =====================================================
+# Docker / Containers / Volumes
+# =====================================================
+
+# Local Postgres data volume created by compose
+postgres-data/
+
+# Redpanda / Kafka data (if created)
+redpanda-data/
+kafka-data/
+docker-data/
+
+# Docker artifacts
+.docker/
+docker-compose.override.yml
